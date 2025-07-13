@@ -1,27 +1,45 @@
-# NgCo2Print
+# 🌍 NgCO₂Print - Calcula tu Huella de Carbono
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+**NgCO₂Print** es una aplicación web desarrollada con **Angular** y **TailwindCSS** que permite calcular la huella de carbono generada por tus desplazamientos en distintos medios de transporte. Además, traduce ese impacto en equivalencias visuales (lavadoras, emails, carne, etc.) y sugiere alternativas para compensarla, como plantar árboles, cambiar bombillas o usar bicicleta.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Características
 
-## Code scaffolding
+- ✅ Cálculo preciso de la huella de CO₂ vía **API externa (RapidAPI)**
+- 📊 Visualización del impacto con equivalencias fáciles de entender
+- 🌱 Sugerencias prácticas para compensar tu huella
+- 🧠 Datos basados en fuentes científicas como EPA y Carbon Trust
+- 📱 Totalmente **responsive** y optimizado para móviles
+- 🧩 Arquitectura modular con componentes Angular separados:
+  - `SidebarComponent`: entrada de datos (transporte, km, tipo, periodo)
+  - `ImpactosComponent`: visualización de equivalencias contaminantes
+  - `AlternativasComponent`: sugerencias para compensar la huella
+  - `AppComponent`: distribución general y lógica del flujo de datos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠️ Tecnologías usadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Angular 17](https://angular.io/) (TypeScript)
+- [TailwindCSS](https://tailwindcss.com/)
+- [RapidAPI - CarbonFootprint API](https://rapidapi.com/carbonfootprint/api/carbonfootprint1)
+- HTML5 / CSS3
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📦 Instalación y uso local
 
-## Running end-to-end tests
+```bash
+# Clona el repositorio
+git clone https://github.com/Fibanezv/ngCO2Print.git
+cd ngCO2Print
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Clona el repositorio
+Incluye tu API_KEY en Constantes
 
-## Further help
+# Instala dependencias
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Inicia el servidor
+ng serve

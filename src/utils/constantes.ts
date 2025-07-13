@@ -3,7 +3,7 @@ import { HuellaEquivalencia } from "../app/model/HuellaDataConvertida";
 // src/app/utils/constantes.ts
 export class Constantes {
   static BASE_URL = 'https://carbonfootprint1.p.rapidapi.com';
-  static API_KEY = '7df11989e1msh32134e6fa75d689p15192fjsn524429e6cfc6';
+  static API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXX';
   static API_HOST = 'carbonfootprint1.p.rapidapi.com';
 
   static readonly TIPOS_VEHICULOS: Record<string, { label: string, value: string }[]> = {
@@ -51,7 +51,7 @@ export class Constantes {
     anual: 365
   };
 
-static HUELLA_EQUIVALENCIAS_IMPACTO: HuellaEquivalencia[] = [
+  static HUELLA_EQUIVALENCIAS_IMPACTO: HuellaEquivalencia[] = [
   {
     id: 'lavadora',
     titulo: 'Tu huella equivale a realizar',
@@ -100,9 +100,9 @@ static HUELLA_EQUIVALENCIAS_IMPACTO: HuellaEquivalencia[] = [
     factor: 0.005,
     tipo: 'impacto',
   }
-];
+  ];
 
-static HUELLA_EQUIVALENCIAS_ALTERNATIVAS: HuellaEquivalencia[] = [
+  static HUELLA_EQUIVALENCIAS_ALTERNATIVAS: HuellaEquivalencia[] = [
   {
     id: 'arboles',
     titulo: 'Compensa tu huella de carbono plantando',
@@ -151,7 +151,5 @@ static HUELLA_EQUIVALENCIAS_ALTERNATIVAS: HuellaEquivalencia[] = [
     factor: 1.5,
     tipo: 'alternativa',
   }
-];
-
-
+  ];
 }
